@@ -9,13 +9,14 @@
       radial-gradient(at 0% 100%, #bbdefb 0px, transparent 50%), /* 稍深的浅蓝 */
       radial-gradient(at 80% 100%, #fff59d 0px, transparent 50%), /* 稍深的浅黄 */
       radial-gradient(at 0% 0%, #e1bee7 0px, transparent 50%); /* 稍深的浅紫 */
-  background-size: 180% 180%;
-  animation: bg-shift 15s ease-in-out infinite alternate;
+  background-size: 400% 400%;
+  animation: bg-shift 15s ease infinite;
 }
 
 @keyframes bg-shift {
-  0% { background-position: 0% 0%; }
-  100% { background-position: 100% 100%; }
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 .aminder-title {
@@ -34,5 +35,27 @@
 @media (max-width: 768px) {
   .aminder-title {
     font-size: 5rem;
+  }
+}
+
+.scroll-down-arrow {
+  position: absolute;
+  bottom: 10px; /* Adjust as needed */
+  right: 80px; /* Adjust to position next to the settings button */
+  z-index: 40; /* Ensure it's above other content but below the button's z-index */
+  cursor: pointer;
+  animation: bounce 2s infinite;
+  color: #4a4a4a; /* Or any color that fits your theme */
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
   }
 }
