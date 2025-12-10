@@ -1,0 +1,38 @@
+/* Custom Styles for Aminder Home */
+.mesh-bg {
+  background-color: #ffffff;
+  background-image: 
+      radial-gradient(at 40% 20%, #fff9c4 0px, transparent 50%), /* 浅黄 */
+      radial-gradient(at 80% 0%, #e3f2fd 0px, transparent 50%), /* 浅蓝 */
+      radial-gradient(at 0% 50%, #f3e5f5 0px, transparent 50%), /* 浅紫 */
+      radial-gradient(at 80% 50%, #ffffff 0px, transparent 50%), /* 白 */
+      radial-gradient(at 0% 100%, #bbdefb 0px, transparent 50%), /* 稍深的浅蓝 */
+      radial-gradient(at 80% 100%, #fff59d 0px, transparent 50%), /* 稍深的浅黄 */
+      radial-gradient(at 0% 0%, #e1bee7 0px, transparent 50%); /* 稍深的浅紫 */
+  background-size: 180% 180%;
+  animation: bg-shift 15s ease-in-out infinite alternate;
+}
+
+@keyframes bg-shift {
+  0% { background-position: 0% 0%; }
+  100% { background-position: 100% 100%; }
+}
+
+.aminder-title {
+  font-family: 'Dancing Script', cursive;
+  font-size: 9rem; 
+  font-weight: 700;
+  /* 使用深灰色或带一点颜色的灰，避免纯黑太突兀 */
+  color: #4a4a4a; 
+  letter-spacing: 2px;
+  text-shadow: 4px 4px 8px rgba(0,0,0,0.05);
+  user-select: none;
+  cursor: default;
+}
+
+/* 响应式调整：在小屏幕上减小字体 */
+@media (max-width: 768px) {
+  .aminder-title {
+    font-size: 5rem;
+  }
+}

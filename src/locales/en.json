@@ -1,0 +1,22 @@
+{
+  "app_title": "Vite + React",
+  "count_button": "count is {{count}}",
+  "configure_ai_btn": "Configure AI Provider",
+  "edit_instruction": "Edit <1>src/App.tsx</1> and save to test HMR",
+  "read_docs": "Click on the Vite and React logos to learn more",
+  "modal_title": "AI Provider Configuration",
+  "modal_content": "AI Provider Configuration content will go here.",
+  "ok": "OK",
+  "cancel": "Cancel",
+  "provider": "Provider",
+  "api_key": "API Key",
+  "base_url": "Base URL",
+  "model": "Model",
+  "fetch_models": "Fetch Models",
+  "select_provider": "Select a provider",
+  "enter_api_key": "Enter API Key",
+  "enter_base_url": "Enter Base URL (Optional)",
+  "select_model": "Select a model",
+  "models_fetched": "Models fetched successfully",
+  "fetch_error": "Failed to fetch models"
+}

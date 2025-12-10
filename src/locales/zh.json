@@ -1,0 +1,22 @@
+{
+  "app_title": "Vite + React",
+  "count_button": "当前计数 {{count}}",
+  "configure_ai_btn": "配置 AI 提供商",
+  "edit_instruction": "编辑 <1>src/App.tsx</1> 并保存以测试热更新",
+  "read_docs": "点击 Vite 和 React 图标了解更多",
+  "modal_title": "AI 提供商配置",
+  "modal_content": "AI 提供商配置内容将显示在这里。",
+  "ok": "确定",
+  "cancel": "取消",
+  "provider": "提供商",
+  "api_key": "API 密钥",
+  "base_url": "基础 URL",
+  "model": "模型",
+  "fetch_models": "获取模型列表",
+  "select_provider": "选择提供商",
+  "enter_api_key": "输入 API 密钥",
+  "enter_base_url": "输入基础 URL (可选)",
+  "select_model": "选择模型",
+  "models_fetched": "模型列表获取成功",
+  "fetch_error": "获取模型列表失败"
+}
