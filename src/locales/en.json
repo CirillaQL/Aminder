@@ -18,5 +18,18 @@
   "enter_base_url": "Enter Base URL (Optional)",
   "select_model": "Select a model",
   "models_fetched": "Models fetched successfully",
-  "fetch_error": "Failed to fetch models"
+  "fetch_error": "Failed to fetch models",
+  "create_char_title": "Create your assistant character",
+  "char_name": "Character Name",
+  "char_name_placeholder": "Enter character name",
+  "char_gender": "Gender",
+  "gender_male": "Male",
+  "gender_female": "Female",
+  "gender_other": "Other",
+  "char_desc": "Description",
+  "char_desc_placeholder": "Enter character description",
+  "is_original": "Original Character?",
+  "original_yes": "Yes",
+  "original_no": "No",
+  "next_step": "Next Step"
 }

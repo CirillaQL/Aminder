@@ -21,17 +21,17 @@ const Home = () => {
     setVisible(false);
   };
 
-  const goToLogin = () => {
+  const goToNextPage = () => {
     // Check login status logic would go here.
-    // For now, directly navigate to login.
-    navigate('/login');
+    // Navigate to create character page.
+    navigate('/createCharacter');
   };
 
   const handleWheel = (e: WheelEvent<HTMLDivElement>) => {
     if (visible) return; // Prevent navigation if modal is open
     // Threshold to prevent accidental triggers
     if (e.deltaY > 30) {
-      goToLogin();
+      goToNextPage();
     }
   };
 
@@ -64,7 +64,7 @@ const Home = () => {
         className="absolute bottom-0 right-0 p-4 z-50"
         style={{ position: 'absolute', bottom: 0, right: 0 }}
       >
-          <div className="scroll-down-arrow" onClick={goToLogin}>
+          <div className="scroll-down-arrow" onClick={goToNextPage}>
             <IconArrowDown size="extra-large" />
           </div>
       </div>

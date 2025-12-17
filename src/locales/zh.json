@@ -18,5 +18,18 @@
   "enter_base_url": "输入基础 URL (可选)",
   "select_model": "选择模型",
   "models_fetched": "模型列表获取成功",
-  "fetch_error": "获取模型列表失败"
+  "fetch_error": "获取模型列表失败",
+  "create_char_title": "创建你的助手角色",
+  "char_name": "角色名称",
+  "char_name_placeholder": "请输入角色名称",
+  "char_gender": "角色性别",
+  "gender_male": "男",
+  "gender_female": "女",
+  "gender_other": "其他",
+  "char_desc": "角色描述",
+  "char_desc_placeholder": "请输入角色描述",
+  "is_original": "是否原创",
+  "original_yes": "是",
+  "original_no": "否",
+  "next_step": "下一步"
 }

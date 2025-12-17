@@ -1,4 +1,21 @@
 /* Custom Styles for Aminder Home */
+/* 1. 强制盒模型，防止 padding 撑破宽度 */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. 修复 Semi UI 与 Tailwind 的冲突 */
+/* Tailwind 会把所有元素的 border 设为 0，这会导致 Semi 的 Input边框消失或变形 */
+.semi-input, .semi-input-textarea {
+  border-width: 1px; 
+}
+
+/* 3. 修复 Placeholder 垂直居中问题 */
+.semi-input-wrapper {
+    display: flex;
+    align-items: center; 
+}
+
 .mesh-bg {
   background-color: #ffffff;
   background-image: 
@@ -58,4 +75,59 @@
   60% {
     transform: translateY(-5px);
   }
+}
+
+/* CreateCharacter Page Styles */
+.create-character-bg {
+    background-color: #ffffff;
+  background-image: 
+      radial-gradient(at 40% 20%, #fff9c4 0px, transparent 50%), /* 浅黄 */
+      radial-gradient(at 80% 0%, #e3f2fd 0px, transparent 50%), /* 浅蓝 */
+      radial-gradient(at 0% 50%, #f3e5f5 0px, transparent 50%), /* 浅紫 */
+      radial-gradient(at 80% 50%, #ffffff 0px, transparent 50%), /* 白 */
+      radial-gradient(at 0% 100%, #bbdefb 0px, transparent 50%), /* 稍深的浅蓝 */
+      radial-gradient(at 80% 100%, #fff59d 0px, transparent 50%), /* 稍深的浅黄 */
+      radial-gradient(at 0% 0%, #e1bee7 0px, transparent 50%); /* 稍深的浅紫 */
+    background-size: 200% 200%;
+    animation: cc-bg-shift 10s ease infinite;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+@keyframes cc-bg-shift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.character-container {
+    width: 60vw;
+    height: 80vh;
+    max-width: 90%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(8px);
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.character-block {
+    flex: 1;
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+}
+
+.character-block:last-child {
+    border-bottom: none;
+}
+
+.character-block:hover {
+    background-color: rgba(255, 255, 255, 0.4);
 }
