@@ -31,5 +31,18 @@
   "is_original": "是否原创",
   "original_yes": "是",
   "original_no": "否",
-  "next_step": "下一步"
+  "next_step": "下一步",
+  "create_success": "创建成功",
+  "create_failed": "创建失败",
+  "please_fill_all_fields": "请填写所有必填字段",
+  "persona_result": "生成的角色原型",
+  "personality_traits": "性格特质",
+  "big_five": "大五人格",
+  "openness": "开放性",
+  "conscientiousness": "尽责性",
+  "extraversion": "外向性",
+  "agreeableness": "宜人性",
+  "neuroticism": "情绪不稳定性",
+  "generated_traits": "核心标签",
+  "back_to_edit": "返回修改"
 }

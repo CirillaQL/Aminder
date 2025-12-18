@@ -31,5 +31,18 @@
   "is_original": "Original Character?",
   "original_yes": "Yes",
   "original_no": "No",
-  "next_step": "Next Step"
+  "next_step": "Next Step",
+  "create_success": "Created successfully",
+  "create_failed": "Failed to create",
+  "please_fill_all_fields": "Please fill in all required fields",
+  "persona_result": "Generated Persona Prototype",
+  "personality_traits": "Personality Traits",
+  "big_five": "Big Five Personality",
+  "openness": "Openness",
+  "conscientiousness": "Conscientiousness",
+  "extraversion": "Extraversion",
+  "agreeableness": "Agreeableness",
+  "neuroticism": "Neuroticism",
+  "generated_traits": "Core Traits",
+  "back_to_edit": "Back to Edit"
 }
